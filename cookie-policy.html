@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie政策 - Teams桌面版下载</title>
+    <meta name="description" content="了解s-teams.com.cn如何使用Cookie技术来改善您的浏览体验。详细说明本站使用的Cookie类型及其用途。">
+    <meta name="robots" content="noindex,follow">
+    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <style>
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-card: #151933;
+            --accent: #7B83EB;
+            --accent-cyan: #00d2ff;
+            --text-primary: #e8e8e8;
+            --text-secondary: #8892b0;
+            --border-color: #1e2a4a;
+            --gradient-main: linear-gradient(135deg, #7B83EB, #00d2ff);
+            --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-cyan); }
+
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(10, 14, 39, 0.92); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 5%; height: 68px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+
+        .nav-brand {
+            font-size: 1.3rem; font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text-primary); }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 5% 80px;
+        }
+
+        .content h1 {
+            font-size: 2.2rem; font-weight: 800; margin-bottom: 12px;
+            background: linear-gradient(135deg, #ffffff 0%, #c8ccff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        .content .update-date {
+            color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 40px;
+        }
+
+        .content h2 {
+            font-size: 1.3rem; font-weight: 700; color: var(--accent);
+            margin: 36px 0 16px; padding-left: 16px;
+            border-left: 3px solid var(--accent-cyan);
+        }
+
+        .content p, .content li {
+            color: var(--text-secondary); font-size: 0.95rem; line-height: 1.9;
+            margin-bottom: 12px;
+        }
+
+        .content ul { padding-left: 24px; margin-bottom: 16px; }
+        .content li { margin-bottom: 8px; }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .cookie-table th {
+            background: rgba(123, 131, 235, 0.12);
+            padding: 14px 18px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cookie-table td {
+            padding: 14px 18px;
+            color: var(--text-secondary);
+            font-size: 0.88rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .info-box {
+            background: rgba(123, 131, 235, 0.08);
+            border: 1px solid rgba(123, 131, 235, 0.2);
+            border-radius: 12px; padding: 24px;
+            margin: 32px 0;
+        }
+
+        .info-box p {
+            color: var(--text-primary); font-weight: 500;
+        }
+
+        .footer {
+            background: var(--bg-card); border-top: 1px solid var(--border-color); padding: 40px 5%;
+        }
+        .footer-inner {
+            max-width: 1400px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 20px;
+        }
+        .footer-brand {
+            font-size: 1.1rem; font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .footer-links { display: flex; gap: 24px; list-style: none; }
+        .footer-links a { color: var(--text-secondary); font-size: 0.88rem; }
+        .footer-links a:hover { color: var(--text-primary); }
+        .footer-legal { color: var(--text-secondary); font-size: 0.82rem; }
+
+        @media (max-width: 768px) {
+            .content h1 { font-size: 1.7rem; }
+            .content { padding: 110px 5% 60px; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .cookie-table th, .cookie-table td { padding: 10px 12px; font-size: 0.82rem; }
+        }
+        @media (max-width: 480px) {
+            .content h1 { font-size: 1.4rem; }
+            .content h2 { font-size: 1.1rem; }
+            .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Teams 桌面版</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="download.html">下载</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Cookie 政策</h1>
+        <p class="update-date">最后更新日期：2026年</p>
+
+        <div class="info-box">
+            <p>🍪 本政策说明本站（s-teams.com.cn）如何使用Cookie技术来改善您的浏览体验。访问本站即表示您同意我们按照本政策使用Cookie。</p>
+        </div>
+
+        <h2>一、什么是Cookie</h2>
+        <p>Cookie是网站存储在用户设备上的小型文本文件。它们允许网站识别用户的设备并记住某些偏好设置，从而提升浏览体验和网站功能。</p>
+
+        <h2>二、本站使用的Cookie类型</h2>
+        <p>本站可能使用以下类型的Cookie：</p>
+
+        <table class="cookie-table">
+            <thead>
+                <tr>
+                    <th>Cookie类型</th>
+                    <th>用途说明</th>
+                    <th>有效期</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>必要Cookie</td>
+                    <td>维持网站基本功能，如页面导航、安全验证等</td>
+                    <td>会话期间</td>
+                </tr>
+                <tr>
+                    <td>分析Cookie</td>
+                    <td>收集访问统计数据，帮助我们了解用户如何使用网站</td>
+                    <td>最长2年</td>
+                </tr>
+                <tr>
+                    <td>功能Cookie</td>
+                    <td>记住用户偏好设置，如语言选择、界面主题等</td>
+                    <td>最长1年</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>三、第三方Cookie</h2>
+        <p>本站可能嵌入第三方服务（如流量分析工具），这些服务可能设置自己的Cookie。我们无法控制第三方Cookie的设置，建议用户查阅相关第三方的隐私政策了解详情。</p>
+
+        <h2>四、如何管理Cookie</h2>
+        <p>用户可以通过浏览器设置管理或删除Cookie：</p>
+        <ul>
+            <li><strong>Chrome</strong>：设置 → 隐私和安全 → Cookie和其他网站数据</li>
+            <li><strong>Edge</strong>：设置 → 隐私、搜索和服务 → Cookie和网站权限</li>
+            <li><strong>Firefox</strong>：设置 → 隐私与安全 → Cookie和网站数据</li>
+            <li><strong>Safari</strong>：偏好设置 → 隐私 → Cookie和网站数据</li>
+        </ul>
+        <p>请注意，禁用某些Cookie可能会影响网站的部分功能正常使用。</p>
+
+        <h2>五、Cookie政策更新</h2>
+        <p>我们可能会不时更新本Cookie政策以反映技术变化或法律法规要求。更新后的政策将在本页面发布。建议用户定期查阅以了解最新信息。</p>
+
+        <h2>六、联系我们</h2>
+        <p>如对本Cookie政策有任何疑问，请通过网站上提供的联系方式与我们联系。我们也会在其他相关页面（如 <a href="privacy-policy.html">隐私政策</a>）中说明Cookie的使用情况。</p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Teams 桌面版</div>
+            <ul class="footer-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="download.html">下载</a></li>
+                <li><a href="privacy-policy.html">隐私政策</a></li>
+                <li><a href="user-agreement.html">用户协议</a></li>
+                <li><a href="cookie-policy.html">Cookie政策</a></li>
+            </ul>
+            <div class="footer-legal">© 2026 s-teams.com.cn 保留所有权利</div>
+        </div>
+    </footer>
+</body>
+</html>

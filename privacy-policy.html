@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - Teams桌面版下载</title>
+    <meta name="description" content="了解s-teams.com.cn的隐私政策。本站作为独立下载引导站点，详细说明我们如何收集、使用和保护您的个人信息。">
+    <meta name="robots" content="noindex,follow">
+    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <style>
+        :root {
+            --bg-primary: #0a0e27;
+            --bg-card: #151933;
+            --accent: #7B83EB;
+            --accent-cyan: #00d2ff;
+            --text-primary: #e8e8e8;
+            --text-secondary: #8892b0;
+            --border-color: #1e2a4a;
+            --gradient-main: linear-gradient(135deg, #7B83EB, #00d2ff);
+            --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--accent-cyan); }
+
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(10, 14, 39, 0.92); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 5%; height: 68px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+
+        .nav-brand {
+            font-size: 1.3rem; font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--text-primary); }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 5% 80px;
+        }
+
+        .content h1 {
+            font-size: 2.2rem; font-weight: 800; margin-bottom: 12px;
+            background: linear-gradient(135deg, #ffffff 0%, #c8ccff 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+
+        .content .update-date {
+            color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 40px;
+        }
+
+        .content h2 {
+            font-size: 1.3rem; font-weight: 700; color: var(--accent);
+            margin: 36px 0 16px; padding-left: 16px;
+            border-left: 3px solid var(--accent-cyan);
+        }
+
+        .content p, .content li {
+            color: var(--text-secondary); font-size: 0.95rem; line-height: 1.9;
+            margin-bottom: 12px;
+        }
+
+        .content ul { padding-left: 24px; margin-bottom: 16px; }
+        .content li { margin-bottom: 8px; }
+
+        .disclaimer-box {
+            background: rgba(123, 131, 235, 0.08);
+            border: 1px solid rgba(123, 131, 235, 0.2);
+            border-radius: 12px; padding: 24px;
+            margin: 32px 0;
+        }
+
+        .disclaimer-box p {
+            color: var(--text-primary); font-weight: 500;
+        }
+
+        .footer {
+            background: var(--bg-card); border-top: 1px solid var(--border-color); padding: 40px 5%;
+        }
+        .footer-inner {
+            max-width: 1400px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 20px;
+        }
+        .footer-brand {
+            font-size: 1.1rem; font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .footer-links { display: flex; gap: 24px; list-style: none; }
+        .footer-links a { color: var(--text-secondary); font-size: 0.88rem; }
+        .footer-links a:hover { color: var(--text-primary); }
+        .footer-legal { color: var(--text-secondary); font-size: 0.82rem; }
+
+        @media (max-width: 768px) {
+            .content h1 { font-size: 1.7rem; }
+            .content { padding: 110px 5% 60px; }
+            .footer-inner { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .content h1 { font-size: 1.4rem; }
+            .content h2 { font-size: 1.1rem; }
+            .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Teams 桌面版</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="download.html">下载</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>隐私政策</h1>
+        <p class="update-date">最后更新日期：2026年</p>
+
+        <div class="disclaimer-box">
+            <p>⚠️ 重要声明：本网站（s-teams.com.cn）是一个独立的软件下载引导站点，与 Microsoft Corporation 无任何官方合作关系。Microsoft Teams 是 Microsoft Corporation 的注册商标和软件产品，本站仅提供软件下载引导服务。</p>
+        </div>
+
+        <h2>一、信息收集范围</h2>
+        <p>本站作为软件下载引导页，不会主动收集用户的个人身份信息。当用户访问本站时，我们可能通过服务器日志自动记录以下非个人识别信息：</p>
+        <ul>
+            <li>浏览器类型和版本</li>
+            <li>操作系统类型</li>
+            <li>访问时间戳</li>
+            <li>来源页面URL</li>
+            <li>IP地址（用于安全分析和防滥用目的）</li>
+        </ul>
+
+        <h2>二、Cookie 使用</h2>
+        <p>本站可能使用Cookie技术来提升用户体验和进行网站流量分析。用户可通过浏览器设置自行管理或删除Cookie。详细信息请参阅我们的 <a href="cookie-policy.html">Cookie政策</a>。</p>
+
+        <h2>三、第三方链接</h2>
+        <p>本站可能包含指向第三方网站的链接。我们不对第三方网站的内容、隐私实践或数据收集行为承担任何责任。建议用户在访问任何第三方网站时，仔细阅读其隐私政策。</p>
+
+        <h2>四、数据安全</h2>
+        <p>本站采取合理的技术和管理措施保护收集到的信息免受未经授权的访问、使用或泄露。但我们无法保证互联网传输的绝对安全性。</p>
+
+        <h2>五、用户权利</h2>
+        <p>用户有权：</p>
+        <ul>
+            <li>要求了解我们持有的关于其的任何信息</li>
+            <li>要求更正不准确的信息</li>
+            <li>要求删除其个人信息</li>
+            <li>撤回对数据处理的同意</li>
+        </ul>
+
+        <h2>六、政策更新</h2>
+        <p>我们保留随时更新本隐私政策的权利。修改后的政策将在本页面发布，并更新"最后更新日期"。建议用户定期查阅本政策以了解最新信息。</p>
+
+        <h2>七、联系方式</h2>
+        <p>如对本隐私政策有任何疑问或建议，请通过网站上的联系方式与我们取得联系。</p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Teams 桌面版</div>
+            <ul class="footer-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="download.html">下载</a></li>
+                <li><a href="privacy-policy.html">隐私政策</a></li>
+                <li><a href="user-agreement.html">用户协议</a></li>
+                <li><a href="cookie-policy.html">Cookie政策</a></li>
+            </ul>
+            <div class="footer-legal">© 2026 s-teams.com.cn 保留所有权利</div>
+        </div>
+    </footer>
+</body>
+</html>

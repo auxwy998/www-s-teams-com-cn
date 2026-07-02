@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0a0e27"/>
+  <rect x="12" y="14" width="22" height="22" rx="4" fill="#7B83EB"/>
+  <text x="23" y="33" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">T</text>
+  <rect x="30" y="20" width="18" height="18" rx="3" fill="rgba(123,131,235,0.6)" stroke="#7B83EB" stroke-width="0.5"/>
+  <circle cx="35" cy="44" r="5" fill="rgba(123,131,235,0.7)"/>
+  <rect x="31" y="46" width="8" height="8" rx="2" fill="rgba(123,131,235,0.7)"/>
+  <circle cx="44" cy="42" r="5" fill="rgba(123,131,235,0.5)"/>
+  <rect x="40" y="44" width="8" height="8" rx="2" fill="rgba(123,131,235,0.5)"/>
+</svg>
